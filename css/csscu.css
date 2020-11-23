@@ -1,7 +1,6 @@
 .imgSlider{
     width: 100% !important;
     height: 90vh;
-    min-height: 500px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat !important;
@@ -99,8 +98,20 @@ nav ul li a {
 
 .splide>.splide__track {
     position: relative;
+    z-index: 0;
 }
 
+
+.splide>.splide__track::after {
+    content:'';
+    position: absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.33);
+    z-index: 1;
+}
 .splide>.splide__track>.texlider {
     position: relative;
     text-align: center;
@@ -108,16 +119,10 @@ nav ul li a {
 }
 
 .container_slider{
-    width: 100%;
-    height: 100vh;
-    min-height: 500px !important;
-    background: rgba(0, 0, 0, 0.5);
     position: absolute;
+    margin: 0 auto;
+    margin-top: 10em;
     z-index: 3;
-    color: white;
-}
-.container_slider>.insideContainerSlider{
-    padding: 10em;
 }
 
 .container_slider>h1{
