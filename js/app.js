@@ -1,10 +1,10 @@
-// new Splide('#splide', {
-//     type: 'fade',
-//     rewind: true,
-// }).mount();
-
 $(document).ready(function () {
 
+    new Splide('.splide', {
+        type: 'fade',
+        rewind: true,
+        autoplay: true
+    }).mount();
 
     $(".menu-icon").on("click", function () {
         $("nav ul").toggleClass("showing");

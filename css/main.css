@@ -1,6 +1,14 @@
 .imgSlider{
-    width: 100%;
-    height: 80vh;
+    width: 100% !important;
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat !important;
+    position: absorlute;
+}
+
+.logoImage{
+    width: 57%;
 }
 
 html, body {
@@ -17,8 +25,8 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
-    background-size: cover;
+    /* background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%; */
+    /* background-size: cover; */
 }
 
 .content {
@@ -41,9 +49,11 @@ header {
 }
 
 nav {
+    z-index: 9999;
     position: fixed;
     width: 100%;
     line-height: 60px;
+    /* background: rgba(0, 0, 0, 0.4); */
 }
 
 nav ul {
@@ -86,8 +96,37 @@ nav ul li a {
     display: none;
 }
 
-@media(max-width: 786px) {
+.splide>.splide__track {
+    position: relative;
+}
 
+.splide>.splide__track>.textSlider {
+    position: relative;
+    text-align: center;
+}
+
+.splide>.splide__track:after {
+    content:'';
+    position: absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.33);
+}
+
+.container_slider{
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 10em;
+    z-index: 9999999;
+}
+
+.container_slider>h1{
+    color: white;
+}
+
+@media(max-width: 786px) {
     .logo {
           position: fixed;
           top: 0;
@@ -119,3 +158,4 @@ nav ul li a {
     }
 
 }
+
