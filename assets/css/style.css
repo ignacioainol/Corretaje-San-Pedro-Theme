@@ -1099,26 +1099,26 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  /* opacity: 0.3; */
   position: absolute;
   left: 30px;
   right: 30px;
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.3);
   padding: 15px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #fff;
+  color: #cfd8dc;
   font-weight: 600;
-  color: #222222;
+  /* color: #222222; */
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #555555;
+  color: #cfd8dc;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1127,12 +1127,16 @@ section {
   position: absolute;
   right: 40px;
   font-size: 24px;
-  top: calc(50% - 18px);
+  /* top: calc(50% - 18px); */
   color: #3c3c3c;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #106eea;
+}
+
+.preview-link{
+  font-size: 1em !important;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
