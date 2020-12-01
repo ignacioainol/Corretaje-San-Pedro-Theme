@@ -1106,7 +1106,7 @@ section {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   padding: 15px;
 }
 
