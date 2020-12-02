@@ -70,13 +70,13 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Inicio</a></li>
+          <li class="active"><a href="<?= get_home_url();?>">Inicio</a></li>
           <li><a href="#about">Quienes Somos</a></li>
           <li><a href="#publicaciones">Últimas Publicaciones</a></li>
           <li class="drop-down"><a href="javascript:void(0)">Propiedades</a>
             <ul>
-              <li><a href="en-venta.html">En Venta</a></li>
-              <li><a href="en-arriendo.html">En Arriendo</a></li>
+              <li><a href="/ventas">En Venta</a></li>
+              <li><a href="/arriendos">En Arriendo</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contacto</a></li>
