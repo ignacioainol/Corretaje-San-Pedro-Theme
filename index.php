@@ -176,11 +176,11 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="<?= bloginfo('template_directory')?>/forms/sendmail.php" id="formContact" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre"
-                    data-rule="minlen:4" data-msg="Ingresa minimo 4 caractéres" />
+                    data-rule="minlen:4" data-msg="Ingresa minimo 4 carácteres" />
                   <div class="validate"></div>
                 </div>
                 <div class="col form-group">
@@ -191,7 +191,7 @@
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
-                  data-rule="minlen:4" data-msg="Por favor ingresa mínimo 8 caracteres para el asunto" />
+                  data-rule="minlen:4" data-msg="Por favor ingresa mínimo 8 carácteres para el asunto" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
