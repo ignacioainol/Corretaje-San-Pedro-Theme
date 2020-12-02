@@ -314,7 +314,15 @@
       url: form.attr('action'),
       type: 'POST',
       data: form.serialize(),
+      beforeSend: function () {
+        console.log("conchetumare caigo aca loading maricon");
+        $('.loading').show();
+        $('#btnSubmit').hide();
+      },
       success: function (e) {
+        $('.loading').hide();
+        $('#btnSubmit').show();
+        $('#formContact')[0].reset();
         alert(e);
       }
     });

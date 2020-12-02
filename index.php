@@ -199,13 +199,15 @@
                   data-msg="Escribe algo para nosotros" placeholder="Mensaje"></textarea>
                 <div class="validate"></div>
               </div>
-              <div class="mb-3">
-                <div class="loading">Cargando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Tu mensaje ha sido enviado. Gracias!!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              <div class="text-center"><button id="btnSubmit" type="submit">Enviar Mensaje</button></div>
             </form>
+            <div class="mb-3 text-center">
+                <div class="loading">
+                <img src="<?php bloginfo('template_url') ?>/img/loading.svg" alt="">
+                </div>
+                <div class="error-message"></div>
+                <!-- <div class="sent-message">Tu mensaje ha sido enviado. Gracias!!</div> -->
+              </div>
           </div>
 
         </div>

@@ -29,8 +29,8 @@ if($_POST){
         $mail->Port       = 587;                                    // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('noreply.info.cyrax@gmail.com', 'Nuevo Correo');
-        $mail->addAddress('ignacio.ainolrivera@gmail.com', 'Formulario de Contacto');     // Add a recipient
+        $mail->setFrom('noreply.info.cyrax@gmail.com', 'Nuevo email de contacto');
+        $mail->addAddress('corretajessanpedro@gmail.com', 'Corretajes San Pedro');     // Add a recipient
 
 
         // Content
