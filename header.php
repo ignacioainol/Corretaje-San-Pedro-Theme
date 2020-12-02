@@ -61,7 +61,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <a href=""><img style="width: 200px;" src="<?php bloginfo('template_url') ?>/img/logo.png" alt=""></a>
+      <a href="<?php echo get_home_url();?>"><img style="width: 200px;" src="<?php bloginfo('template_url') ?>/img/logo.png" alt=""></a>
       <!-- <h1 class="logo mr-auto"><a href="index.html">
 
       </a></h1> -->
@@ -70,13 +70,13 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="<?= get_home_url();?>">Inicio</a></li>
+          <li class="active"><a href="<?php echo get_home_url();?>">Inicio</a></li>
           <li><a href="#about">Quienes Somos</a></li>
           <li><a href="#publicaciones">Últimas Publicaciones</a></li>
           <li class="drop-down"><a href="javascript:void(0)">Propiedades</a>
             <ul>
-              <li><a href="/ventas">En Venta</a></li>
-              <li><a href="/arriendos">En Arriendo</a></li>
+              <li><a href="ventas">En Venta</a></li>
+              <li><a href="arriendos">En Arriendo</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contacto</a></li>
