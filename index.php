@@ -101,8 +101,8 @@
               <?php $category =  esc_html( $categoryArray[0]->name); ?>
               <?php $tipoinmueble = get_post_meta($post->ID,'tipo_inmueble',true); ?>
               <?php $dormitorios = get_post_meta($post->ID,'dormitorios',true); ?>
+              <?php $banios = get_post_meta($post->ID,'banios',true); ?>
               <?php $comuna = get_post_meta($post->ID,'comuna',true); ?>
-
 
               <?php if($category === 'Arriendo'): ?>
                 <?php $filter = 'filter-app'; ?>
@@ -116,7 +116,7 @@
                     class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4><?= get_the_title(); ?></h4>
-                    <p><i class="fas fa-bed"></i> <?= $dormitorios ?> dorm - <i class="fas fa-shower"></i> 1 Baño - <i
+                    <p><i class="fas fa-bed"></i> <?= $dormitorios ?> dorm - <i class="fas fa-shower"></i> <?= $banios ?> Baño<?= $banios > 1 ? 's': ''; ?> - <i
                         class="fas fa-map-marker-alt"></i> <?= $comuna ?> </p>
                   </div>
                 </div>
