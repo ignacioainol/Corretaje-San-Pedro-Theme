@@ -1,7 +1,7 @@
 <?php
 
 global $post;
-$args = array( 'numberposts' => 10, 'category_name' => 'venta' );
+$args = array( 'numberposts' => 1, 'category_name' => 'venta' );
 $posts = get_posts( $args );
 
  ?>
@@ -23,15 +23,17 @@ $posts = get_posts( $args );
                 <?php $dormitorios = get_post_meta($post->ID,'dormitorios',true); ?>
                 <?php $banios = get_post_meta($post->ID,'banios',true); ?>
                 <?php $comuna = get_post_meta($post->ID,'comuna',true); ?>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="<?php echo $urlImage ?>"
-                            class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4><?php the_title(); ?></h4>
-                            <p><i class="fas fa-bed"></i> <?= $dormitorios ?> dorm - <i class="fas fa-shower"></i> <?= $banios ?> Baño<?= $banios > 1 ? 's': ''; ?> - <i
-                        class="fas fa-map-marker-alt"></i> <?= $comuna ?> </p>
+                    <a href="<?= the_permalink() ?>">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <img src="<?php echo $urlImage ?>"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4><?php the_title(); ?></h4>
+                                <p><i class="fas fa-bed"></i> <?= $dormitorios ?> dorm - <i class="fas fa-shower"></i> <?= $banios ?> Baño<?= $banios > 1 ? 's': ''; ?> - <i
+                            class="fas fa-map-marker-alt"></i> <?= $comuna ?> </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 <?php endforeach ?>
 
                 </div>

@@ -26,6 +26,7 @@
   <link href="<?php bloginfo('template_url') ?>/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url') ?>/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url') ?>/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/js/pgwslideshow/pgwslideshow.css">
 
   <!-- Template Main CSS File -->
   <link href="<?php bloginfo('template_url') ?>/css/style.css" rel="stylesheet">
@@ -72,8 +73,8 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="<?php echo get_home_url();?>">Inicio</a></li>
-          <li><a href="#about">Quienes Somos</a></li>
-          <li><a href="#publicaciones">Últimas Publicaciones</a></li>
+          <li><a href="<?php echo get_home_url();?>#about">Quienes Somos</a></li>
+          <li><a href="<?php echo get_home_url();?>#publicaciones">Últimas Publicaciones</a></li>
           <li class="drop-down"><a href="javascript:void(0)">Propiedades</a>
             <ul>
               <li><a href="ventas">En Venta</a></li>

@@ -81,6 +81,13 @@
   <script src="<?php bloginfo('template_url') ?>/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="<?php bloginfo('template_url') ?>/vendor/venobox/venobox.min.js"></script>
   <script src="<?php bloginfo('template_url') ?>/vendor/aos/aos.js"></script>
+  <script src="<?php bloginfo('template_url') ?>/js/pgwslideshow/pgwslideshow.js"></script>
+
+  <script>
+        $(document).ready(function() {
+            $('.pgwSlider').pgwSlider();
+        });
+    </script>
 
   <!-- Template Main JS File -->
   <script src="<?php bloginfo('template_url') ?>/js/main.js"></script>
