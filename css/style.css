@@ -628,7 +628,7 @@ section {
   padding: 20px 0;
   background-color: #f1f6fe;
   min-height: 40px;
-  margin-top: 134px;
+  margin-top: 11em;
 }
 
 @media (max-width: 992px) {
@@ -646,6 +646,7 @@ section {
 @media (max-width: 992px) {
   .breadcrumbs h2 {
     margin: 0 0 10px 0;
+    margin-top: 3em !important;
   }
 }
 
@@ -1207,8 +1208,8 @@ section {
 .portfolio-details .portfolio-info {
   padding: 30px;
   position: absolute;
-  right: 0;
-  bottom: -70px;
+  left: 5em;
+  /* bottom: -70px; */
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;

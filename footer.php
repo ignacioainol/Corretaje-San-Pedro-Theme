@@ -85,7 +85,7 @@
 
   <script>
         $(document).ready(function() {
-            $('.pgwSlider').pgwSlider();
+            $('.pgwSlideshow').pgwSlideshow();
         });
     </script>
 
